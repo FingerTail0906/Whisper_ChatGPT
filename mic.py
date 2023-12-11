@@ -12,14 +12,12 @@ process = None
 def main():
     sg.theme('LightGreen3')
 
-    # define the window layout
     layout = [[sg.Text('Voice to Text', size=(40, 1), justification='center', font='Helvetica 20')],
             [sg.Text('ろくおんていし', key='status')],
             [sg.Button('Record start', size=(10, 1), font='Helvetica 14'),
             sg.Button('Convert', size=(10, 1), font='Helvetica 14'),
             sg.Button('Exit', size=(10, 1), font='Helvetica 14'), ]]
 
-    # create the window and show it without the plot
     window = sg.Window('Voice to Text',
                        layout, location=(800, 400))
 
